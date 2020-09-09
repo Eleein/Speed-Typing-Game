@@ -13,6 +13,7 @@ export function useCounter(time, runTime, text) {
       setWordCount(totalWords);
       setIsGameRunning(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isGameRunning, time]);
 
   return { isGameRunning, setIsGameRunning, wordCount, setWordCount };
